@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #f00;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main .wrap {
+    position: absolute;
+    z-index: 999;
+    border: 1px dashed #45AB62;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    transform: rotate(0deg);
+    transform-origin: top left;
+}
+
+.main .wrap.show {
+    display: block;
+}
+
+.main .item {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 8px;
+}
+.main .item.active {
+  color: #000;
+}
